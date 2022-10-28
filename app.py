@@ -9,7 +9,7 @@ import re
 
 # create flask app
 app = Flask(__name__)
-app.config["TEMPLATES_AUTO_RELOAD"] = True
+# app.config["TEMPLATES_AUTO_RELOAD"] = True
 
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite3'
 # # sqlite3 database
