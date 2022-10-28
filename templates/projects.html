@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<!-- Projects -->
+<section id="projects" class="project-container container">
+    <div class="content-text">
+        <h2>Public Github Repos</h2>
+    </div>
+
+    <article class="project">
+        {% for card in cards %}
+        <div class="textcard">
+            <div class="container">
+                <h3>{{card.name.replace('-', ' ')}}</h3>
+                {% if card.language %}
+                <p>{{card.language}}</p>
+                {% endif %}
+                {% if card.description %}
+                <p>{{card.description}}</p>
+                {% endif %}
+            </div>
+            <div class="container">
+                {% if card.site %}
+                <a href="{{card.site}}" class="btn btn-primary">View Site</a>
+                {% endif %}
+                <a href="{{card.html_url}}" class="btn btn-secondary">Visit Project <i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        {% endfor %}
+
+    </article>
+</section>
+{% endblock %}

@@ -1,0 +1,155 @@
+{% extends 'base.html' %}
+
+{% block headersection %}
+
+<section class="header-container">
+  <img class="profile-image" src="https://avatars.githubusercontent.com/u/20269009" alt="" />
+  <h1>Hey! I'm George V Jose</h1>
+
+  <div class="content-text">
+    <h2>Machine Learning Enthusiast</h2>
+    <p>
+      Striving to be at the forefront of Machine Learning and explore its applications.
+      <!-- <br>
+      Can communicate in ASM, C, C++, JAVA, Go, Python and Javascript -->
+    </p>
+  </div>
+  
+  <!-- <a href="#footer" class="btn btn-secondary">Connect With Me</a> -->
+  <table >
+    <tr>
+      <td><a class="btn btn-secondary" href="https://github.com/GeorgeVJose">Github</a></td>
+      <td><a class="btn btn-secondary" href="https://www.linkedin.com/in/george-v-jose-5bb726156/">LinkedIn</a></td>
+      <td><a class="btn btn-secondary" href="https://medium.com/@GeorgeVJose">Medium</a></td>
+    </tr>
+  </table>
+  <!-- Social links --> 
+  <!-- <table>
+    <tr>
+      <a href="https://twitter.com/dmdhrumilmistry"><img src="{{ url_for('static', filename='assets/twitter-icon.svg') }}" alt="Twitter" style="border-radius: 0px;"></a>
+      <a href="https://linkedin.com/in/dmdhrumilmistry"><img src="{{ url_for('static', filename='assets/linkedin-icon.svg') }}" alt="Linkedin" style="border-radius: 0px;"></a>
+      <a href="https://t.me/anyonymous_dude"><img src="{{ url_for('static', filename='assets/telegram.svg') }}" alt="Telegram"></a>
+      <a href="https://github.com/dmdhrumilmistry"><img src="{{ url_for('static', filename='assets/github-icon.svg') }}" alt="GitHub" style="border-radius: 0px;"></a>
+    </tr>
+  </table> -->
+</section>
+{% endblock %}
+
+{% block body %}
+<section id="projects" class="project-container container">
+  <div class="division"></div>
+
+  <div class="content-text">
+    <h2>Skills</h2>
+    <div class="container">
+      <table style="text-align: center;">
+        <tr>
+          <td  style="padding: 20px;">
+            <div class="textcard"  style="padding: 20px;">
+              <h2><img src="{{ url_for('static', filename='assets/python-icon.svg') }}" alt="Python" style="width: 50px; height: 50px;"></h2>
+              <h4>Python</h4>
+            </div>
+          </td>
+          <td  style="padding: 20px;">
+            <div class="textcard"  style="padding: 20px;">
+              <h2>
+                <table>
+                  <tr>
+                    <img src="{{ url_for('static', filename='assets/tensorflow-icon.svg') }}" alt="Tensorflow" style="width: 50px; height: 50px;">
+                    <img src="{{ url_for('static', filename='assets/pytorch-icon.svg') }}" alt="Pytorch" style="width: 50px; height: 50px;">
+                  </tr>
+                </table>
+              </h2>
+              <h4>Machine Learning & Computer Vision</h4>
+            </div>
+          </td>
+          <td  style="padding: 20px;">
+            <div class="textcard"  style="padding: 20px;">
+              <h2><img src="{{ url_for('static', filename='assets/pandas-icon.svg') }}" alt="pandas" style="width: 50px; height: 50px;"></h2>
+              <h4>Data Analysis</h4>
+            </div>
+          </td>
+          <td  style="padding: 20px;">
+            <div class="textcard"  style="padding: 20px;">
+              <h2>
+                <table>
+                  <tr>
+                  <img src="{{ url_for('static', filename='assets/plotly-icon.svg') }}" alt="Plotly" style="width: 50px; height: 50px;">
+                  <img src="{{ url_for('static', filename='assets/matplotlib-icon.svg') }}" alt="Matplotlib" style="width: 50px; height: 50px;">
+                  </tr>
+                </table>
+              </h2>
+              <h4>Data Visualization</h4>
+            </div>
+          </td>
+          <td  style="padding: 20px;">
+            <div class="textcard"  style="padding: 20px;">
+              <h2><img src="{{ url_for('static', filename='assets/streamlit-icon.svg') }}" alt="Streamlit" style="width: 50px; height: 50px;"></h2>
+              <h4>Dashboards</h4>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>    
+  </div>
+</section>
+
+
+<!-- Projects -->
+<section id="projects" class="project-container container">
+  <div class="division"></div>
+
+  <div class="content-text">
+    <h2>Popular Projects</h2>
+    <!-- <p>Check out some of my projects</p> -->
+  </div>
+
+  <div class="container">
+    <div class="textcard">
+      <table>
+        <tr>
+          <td>
+            <img src="{{ url_for('static', filename='assets/drishte_logo.jpg') }}"alt="DRISHT-E" style="width: auto; max-width: 80%;">
+          </td>
+          <td>
+            <div class="container">
+              <h3>DRISHT-E</h3>
+              <p style="text-align: justify;">
+                DRone Integrated System for Heterogenic Traffic - Extraction (DRISHT-E) 
+                is a fully-automated traffic data extractor tool to detect, track and analyze 
+                vehicle trajectory from drone footages.
+              </p>
+              <a href="https://github.com/GeorgeVJose/DRISHTE-Public" class="btn btn-secondary">View Project <i class="fab fa-github"></i></a>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="textcard">
+      <table>
+        <tr>
+          <td>
+            <div class="container">
+              <h3>F1-Odyssey</h3>
+              <p style="text-align: justify;">
+                Analytics page for interactive Formula 1 lap position, lap time and telemetry charts.
+                Uses data provided by
+                <a href="https://theoehrly.github.io/Fast-F1/">FastF1</a>
+                and frameworks Pandas & Streamlit.
+              </p>
+              <a href="http://f1odyssey.com/" class="btn btn-secondary">View Site </a>
+            </div>
+          </td>
+          <td>
+            <img src="{{ url_for('static', filename='assets/F1 Odyssey.png') }}" alt="F1-Odyssey" style="width: auto; max-width: 90%;">
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <a href="{{url_for('projects_page')}}" class="btn btn-secondary">See More <i class="fas fa-arrow-right"></i></a>
+</section>
+{% endblock %}
